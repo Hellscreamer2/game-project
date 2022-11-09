@@ -16,7 +16,7 @@ export class BrickBehaviorLevel4 extends BaseBrickBehavior {
         if (e.brickId === this.gameObjRef.getId()) {
             // this.gameObjRef.destroy();
             this.hitcount++;
-            if (this.hitcount == 10) {
+            if (this.hitcount == 5) {
                 EventDispatcher.getInstance().getDispatcher().emit(GameEvents.BRICK_HIDE, { brickId: this.gameObjRef.getId(), brickType: BrickType.TYPE_4 });
             }
 
