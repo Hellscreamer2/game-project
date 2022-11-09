@@ -49,7 +49,7 @@ export class LevelFactory extends PIXI.Container {
         this.bricks = [];
 
         if (difficulty === 1) {
-            nbrBrickHorizontal = 1;
+            nbrBrickHorizontal = 10;
             nbrBrickVertical = 3;
             Model.getInstance().setTotalNbrBrick(nbrBrickHorizontal * nbrBrickVertical);
             brickWidth = (GameApplication.STAGE_WIDTH - 4) / nbrBrickHorizontal;
@@ -67,7 +67,7 @@ export class LevelFactory extends PIXI.Container {
         }
 
         if (difficulty === 2) {
-            nbrBrickHorizontal = 1;
+            nbrBrickHorizontal = 15;
             nbrBrickVertical = 3;
             Model.getInstance().setTotalNbrBrick(nbrBrickHorizontal * nbrBrickVertical);
             brickWidth = (GameApplication.STAGE_WIDTH - 4) / nbrBrickHorizontal;
@@ -95,7 +95,7 @@ export class LevelFactory extends PIXI.Container {
         }
         //game extension code
         if (difficulty == 3) {
-            nbrBrickHorizontal = 2;
+            nbrBrickHorizontal = 10;
             nbrBrickVertical = 3;
             Model.getInstance().setTotalNbrBrick(nbrBrickHorizontal * nbrBrickVertical);
             brickWidth = (GameApplication.STAGE_WIDTH - 4) / nbrBrickHorizontal;
